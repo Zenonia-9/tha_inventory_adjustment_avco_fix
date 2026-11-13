@@ -40,9 +40,8 @@ A stock reduction debits the configured variation/expense account and credits St
   - Variation remains inventory value minus the posted Stock GL balance, less other closing adjustments.
   - Date-only cutoffs include the whole day in the company partner's timezone, with UTC as the fallback.
   - Historical valuation is replayed without an installation migration that rewrites old moves, cost history or posted journals.
-- Validation:
+- Tests:
   - `tests/test_adjustment_avco.py` covers adjustment valuation and closing integration.
-  - See [Validation results](VALIDATION.md) for local checks and the BC sample's missing opening-cost limitation.
 
 ## Module Layout
 
@@ -52,7 +51,6 @@ tha_inventory_adjustment_avco_fix/
 |-- tests/
 |-- .gitignore
 |-- README.md
-|-- VALIDATION.md
 |-- __init__.py
 `-- __manifest__.py
 ```
