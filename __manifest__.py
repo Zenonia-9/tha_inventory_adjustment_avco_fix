@@ -1,9 +1,9 @@
 {
-    "name": "THA Inventory Adjustment AVCO Fix",
-    "version": "19.0.1.0.10",
+    "name": "THA Stock Valuation Date Cutoff Fix",
+    "version": "19.0.1.0.11",
     "category": "Inventory/Inventory",
-    "summary": "Value physical counts at AVCO immediately before their effective time",
-    "depends": ["tha_purchase_bill_uom_valuation_fix"],
+    "summary": "Include the complete company-local day in stock valuation closing",
+    "depends": ["stock_account"],
     "license": "LGPL-3",
     "author": "Thein Htoo Aung",
     "installable": True,
